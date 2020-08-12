@@ -15,6 +15,7 @@ from mxnet import ndarray as nd
 import argparse
 import mxnet.optimizer as optimizer
 from config import config, default, generate_config
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'SubCenter-ArcFace'))
 from metric import *
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'common'))
 import flops_counter
@@ -355,7 +356,7 @@ def train_net(args):
 
     model.fit(train_dataiter,
         begin_epoch        = begin_epoch,
-        num_epoch          = 999999,
+        num_epoch          = 2,
         eval_data          = val_dataiter,
         eval_metric        = eval_metrics,
         kvstore            = args.kvstore,
