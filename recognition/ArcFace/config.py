@@ -131,7 +131,7 @@ dataset.casia.dataset = 'casia'
 dataset.casia.dataset_path = '/content/drive/My Drive/Deep Learning/Datasets/casia-webface'
 dataset.casia.num_classes = 10572
 dataset.casia.image_shape = (112,112,3)
-dataset.casia.val_targets = ['lfw', 'cfp_fp', 'agedb_30']
+# dataset.casia.val_targets = ['lfw', 'cfp_fp', 'agedb_30']
 
 loss = edict()
 loss.softmax = edict()
